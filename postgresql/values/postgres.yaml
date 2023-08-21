@@ -1,0 +1,12 @@
+# userPasswordKey for custom user password which is "secret" here
+# adminPasswordKey for default user which is "postgres" and its password is "secret1"
+
+auth:
+  enablePostgresUser: true
+  postgresPassword: "secret1"
+  username: "admin"
+  password: "secret"
+  database: "django_db"
+  secretKeys:
+    adminPasswordKey: postgres-password
+    userPasswordKey: password
