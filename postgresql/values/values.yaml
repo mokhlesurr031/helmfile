@@ -10,3 +10,17 @@ auth:
   secretKeys:
     adminPasswordKey: postgres-password
     userPasswordKey: password
+
+
+
+
+# values/values.yaml
+# postgresql:
+#   postgresqlUsername: admin
+#   postgresqlPassword: secret1
+#   postgresqlDatabase: test_db
+
+# auth:
+#   enablePostgresUser: true
+#   username: admin
+#   password: secret

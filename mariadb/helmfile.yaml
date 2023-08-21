@@ -7,4 +7,4 @@ releases:
   chart: bitnami/mariadb
   version: "13.0.5"
   values:
-  - ./values/mariadb.yaml
+  - ./values/values.yaml

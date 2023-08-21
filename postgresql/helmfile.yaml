@@ -7,4 +7,4 @@ releases:
   chart: bitnami/postgresql
   version: "12.1.2"
   values:
-  - ./values/postgres.yaml
+  - ./values/values.yaml
