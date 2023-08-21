@@ -1,0 +1,15 @@
+auth:
+  rootPassword: "secret1"
+  database: "test_db"
+  username: "admin"
+  password: "secret"
+
+# primary:
+#   containerSecurityContext:
+#     enabled: true
+#     runAsUser: 1001
+#     runAsNonRoot: true
+#     privileged: true
+#     allowPrivilegeEscalation: false
+
+

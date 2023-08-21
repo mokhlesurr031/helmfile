@@ -6,7 +6,7 @@ auth:
   postgresPassword: "secret1"
   username: "admin"
   password: "secret"
-  database: "django_db"
+  database: "test_db"
   secretKeys:
     adminPasswordKey: postgres-password
     userPasswordKey: password
