@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: {{ include "chart.fullname" . }}-web
+  {{ include "application.labels" . }}-web
+
+spec:
+  replicas: {{ .Values.replicaCount }}
+  {{ include "application.selector" . }}-web
+  template:
+    metadata:
+      {{ include "application.labels" . }}-web
+    spec:
+      restartPolicy: {{ .Values.restartPolicy }} 
+      containers:
+        - name: django-img 
+          image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+          ports:
+            - containerPort: {{ .Values.containerPort }}
